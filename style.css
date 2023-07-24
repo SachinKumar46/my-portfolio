@@ -4,6 +4,12 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   scroll-behavior: smooth;
+  
+}
+
+html,body{
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 header {
   width: 100%;
@@ -72,7 +78,7 @@ nav {
   border: none;
   outline: none;
   width: auto;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
 }
 
