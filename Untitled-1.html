@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- aos library  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <!-- jquery -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.1.js"></script> -->
+
+  <!-- type js -->
+  <script src="js/typed.min.js"></script>
+
+  <style>
+    /* Add your custom CSS rules here */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      position: relative;
+      background-color: #f7f7f7;
+      color: #fff;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .logo {
+      font-size: 24px;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu a {
+      text-decoration: none;
+      margin: 0 20px;
+      color: #000;
+    }
+
+    .text {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .text h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .c-btn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Add your custom CSS rules here for other sections */
+
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 768px) {
+      header {
+        padding: 20px 0;
+      }
+
+      .text h1 {
+        font-size: 32px;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      #menu-icon {
+        display: block;
+        cursor: pointer;
+      }
+
+      .menu-responsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #f7f7f7;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .menu-responsive a {
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+        color: #000;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .text h1 {
+        font-size: 24px;
+      }
+    }
+
+    /* Add more media queries if needed */
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">PORTFO<span>LIO</span></div>
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <img src="img/menu icon1.jpg" id="menu-icon">
+    </nav>
+
+    <div class="text">
+      <p>Hello, I am</p>
+      <h1>Sachin Rajput</h1>
+      <p>And I am a <span id="ani" style="color:red;"></span></p>
+      <button class="c-btn">Hire me</button>
+    </div>
+  </header>
+
+  <div class="menu-responsive" id="sidenav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#project">Project</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Rest of your content... -->
+
+  <!-- Bootstrap and other scripts -->
+
+</body>
+
+</html>
