@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+/* Add this to your styles.css file or within a <style> tag in your HTML */
+.sticky-nav {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: transparent;
+    transition: background-color 0.9s ease-out, transform 0.9s ease-out;
+  }
+  
+  .sticky-nav.scrolled {
+    background-color: #000 !important;  /* Change as needed */
+    transform: translateY(-10px);
+  }
+
+  .sticky-nav.scrolled .container{
+    margin-bottom: -12px;
+  }
+
+  .banerImage{
+    width: 100%;
+    height: 600px;
+    clip-path: polygon(50% 0%, 100% 0px, 100% 75%, 50% 100%, 0% 75%, 0px 0px);
+    background: url(../img/b1.png) right center / 50% 100% no-repeat , url(../img/bg1.jpeg) center center / cover no-repeat;
+    background-position: right center, center center;
+    margin-top: -86px;
+  }
+
+  .banerImage .position-absolute{
+    top: 30%;
+    color: #FFFFFF;
+  }
+    .banerImage p{
+      font-size: 25px;
+    }
+    .banerImage p span.typed-text {
+      font-weight: normal;
+      color: #FF0000;
+      font-size: 25px;
+    }
+
+    .banerImage p span.cursor {
+      display: inline-block;
+      background-color: #ccc;
+      margin-left: 0.1rem;
+      width: 3px;
+      animation: blink 1s infinite;
+      font-size: 25px;
+
+    }
+
+   .banerImage p span.cursor.typing {
+      animation: none;
+    }
+
+    .hireMe{
+        background-color: #FF0000;
+        color: #FFFFFF;
+        padding: 7px 10px;
+        border: none;
+        width: max-content;
+    }
+
+    @keyframes blink {
+      0% {
+        background-color: #ccc;
+      }
+
+      49% {
+        background-color: #ccc;
+      }
+
+      50% {
+        background-color: transparent;
+      }
+
+      99% {
+        background-color: transparent;
+      }
+
+      100% {
+        background-color: #ccc;
+      }
+    }
+  
+
+nav .navbar-brand{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+    line-height: normal;
+    color: #FFF;
+}
+
+nav .navbar-brand span{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+    line-height: normal;
+    color: #FFF;
+    color: #FF0000
+}
+
+nav .navbar-brand:hover{
+    color: #FFFFFF;
+}
+
+
+nav .collapse.navbar-collapse ul li a.active{
+    color: #FFF;
+    position: relative;
+}
+nav .collapse.navbar-collapse ul li a{
+    color: #FFF;
+    position: relative;
+}
+nav .collapse.navbar-collapse ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: width 0.4s ease;
+}
+nav .collapse.navbar-collapse ul li a:hover::after{
+   width: 100%;
+}
+
+/* about */
+.aboutTop{
+  border-top: 2px solid #000000;
+}
+.aboutSection h1{
+  position: relative;
+}
+
+.aboutSection h1::after{
+  content: "";
+  position: absolute;
+  width: 100px;
+  top: 100%;
+  left: 50%;
+  /* right: 50%; */
+  height: 6px;
+  background-color: #000000;
+  transform: translate(-50%,-50%);
+}
+
+/* .aboutLeftSection img{
+  width: 100%;
+  min-height: 220px !important;
+} */
+
+.aboutRightSection h1{
+  color: #FF0000
+}
+/* about  */
+
+/* skills */
+.skillsBgImg{
+  background: url(../img/bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height:600px;
+  width: 100%;
+}
+
+.skillsLeftSection h4{
+  color: #FFFFFF;
+}
+
+.skillsLeftSection p{
+  color: #FFFFFF;
+}
+/* skills */
+
+/* contact */
+.contactBg{
+  background: linear-gradient(155deg, #FF0000 45%, #FFFFFF 0%);
+}
+
+/* contact */
+@media (min-width: 1320px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 100%;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+}
+
+@media (max-width: 767px) {
+  .banerImage{
+    height: 450px;
+  }
+  nav .navbar-collapse.collapse ul{
+    width: 100% !important;
+  }
+
+  .project{
+    margin-top: 340px;
+  }
+  p{
+    text-align: justify;
+  }
+  .sticky-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #000000 !important;
+  }
+  nav .collapse.navbar-collapse ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: width 0.4s ease;
+}
+nav .collapse.navbar-collapse ul li a:hover::after{
+   width: auto;
+}
+
+nav .navbar-brand {
+  font-size: 29px;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  line-height: normal;
+  color: #FFF;
+}
+
+nav .navbar-brand span{
+  font-size: 29px;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  line-height: normal;
+}
+}
